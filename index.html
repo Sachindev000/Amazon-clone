@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoping Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav-logo border">
+          <div class="logo"></div>
+        </div>
+        <div class="nav-address border">
+          <p style="font-size: 12px; color: #cccc; margin-left: 20px">Hello</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot" style="margin-bottom: 3px"></i>
+            <p style="font-size: 15px; font-weight: 700; margin-left: 4px">
+              Select your address
+            </p>
+          </div>
+        </div>
+        <div class="nav-search">
+          <select class="select">
+            <option value="">All</option>
+            <input placeholder="Search Amazon.in" class="search-input" />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </select>
+        </div>
+        <div class="nav-signin border">
+          <p style="font-size: 12px">Hello, sign in</p>
+          <p style="font-size: 14px; font-weight: 600">Account & Lists</p>
+        </div>
+        <div class="nav-return border">
+          <p style="font-size: 12px">Returns</p>
+          <p style="font-size: 14px; font-weight: 600">& Orders</p>
+        </div>
+        <div class="nav-cart border">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Cart
+        </div>
+      </div>
+      <div class="nav-panel">
+        <div class="panel-bars">
+          <i class="fa-solid fa-bars"></i>
+          <p style="font-size: 14px; font-weight: 600">All</p>
+        </div>
+        <div class="panel-texts">
+          <p>Amazon miniTv</p>
+          <p>Sell</p>
+          <p>Best Sellers</p>
+          <p>Today's Deals</p>
+          <p>Mobiles</p>
+          <p>New Releases</p>
+          <p>Customer Service</p>
+
+          <select
+            style="
+              border: none;
+              background-color: transparent;
+              color: #fff;
+              font-size: 14px;
+            "
+          >
+            <option>Prime</option>
+          </select>
+          <p>Electronics</p>
+          <p>Home&Kitchens</p>
+          <p>Computers</p>
+        </div>
+        <div class="panel-deals">
+          <p>New Launches from Mobiles,Electronics&more|Shop now</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <div class="hero-section" style="transition: all ease-in-out">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/heroimg2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/hero_image.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/heroimg3.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/heroimg4.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/heroimg5.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- end -->
+
+    <div class="shop-section">
+      <div class="box1 box">
+        <div class="box-content">
+          <h2>Up to 70% off | Make Up Set</h2>
+          <div class="box-img"style="background-image: url('assets/box5_image.jpg')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h2>Bluetooth Calling Smartwatch</h2>
+          <div
+            class="box-img"
+            style="background-image: url('assets/box9_image.jpg')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+          <h2>Starting ₹99 | Modern Furniture</h2>
+          <div class="box-img"style="background-image: url('assets/box3_image.jpg')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+      <div class="box4 box">
+        <div class="box-content">
+          <h2>Up to 40% off Mobiles & Tablets</h2>
+          <div class="box-img"style="background-image: url('assets/box4_image.jpg')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+      <div class="box5 box">
+        <div class="box-content">
+          <h2> Gaming Laptop & Headset</h2>
+          <div class="box-img"style="background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img22/Electronics/Clearance/Clearance_store_Desktop_CC_1x._SY304_CB628315133_.jpg')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+      <div class="box6 box">
+        <div class="box-content">
+          <h2>Start your fitness journey</h2>
+          <div class="box-img"style="background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img19/Sports/GW_Desktop/1199101_379x304_Compressed._SY304_CB448278349_.jpg')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+      <div class="box7 box">
+        <div class="box-content">
+          <h2>Watch Now Only on miniTV</h2>
+          <div class="box-img"style="background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img17/Home/AmazonTV/Rakshak/PC_CC/DeskCC-379x304_Rakshak_V2._SY304_CB598050054_.jpg')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+      <div class="box8 box">
+        <div class="box-content">
+          <h2>Decorate your home now @₹99</h2>
+          <div class="box-img"style="background-image: url('https://m.media-amazon.com/images/I/61I75V9jbvL._SX522_.jpg')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="foot-panel1">
+        Back To Top
+      </div>
+      <div class="foot-panel2">
+        <ul>
+          <p>Get to Know Us</p>
+          <a>About Us</a>
+          <a>Careers</a>
+          <a>Press Releases</a>
+          <a>Amazon Science</a>
+        </ul>
+
+        <ul>
+          <p>Connect with Us</p>
+          <a>Facebook</a>
+          <a>Twitter</a>
+          <a>Instagram</a>
+        </ul>
+
+        <ul>
+          <p>Make Money with Us</p>
+          <a>Sell under Amazon Accelerator</a>
+          <a>Protect and Build Your Brand</a>
+          <a>Amazon Global Selling</a>
+          <a>Become an Affiliate</a>
+          <a>Fulfilment by Amazon</a>
+          <a>Advertise Your Products</a>
+          <a>Amazon Pay on Merchants</a>
+        </ul>
+
+        <ul>
+          <p>Let Us Help You</p>
+          <a>COVID-19 and Amazon</a>
+          <a>Your Account</a>
+          <a>Returns Centre</a>
+          <a>100% Purchase Protection</a>
+          <a>Amazon App Download</a>
+          <a>Help</a>
+        </ul>
+      </div>
+
+      <div class="foot-panel3">
+        <div class="logo">
+
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
